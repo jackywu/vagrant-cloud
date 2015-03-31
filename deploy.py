@@ -29,7 +29,7 @@ def main():
     exec_cmd(cmd)
 
     # puppet apply install virtualbox
-    cmd = ''' puppet apply init.pp --modulepath=/etc/puppet/modules/:./modules '''
+    cmd = ''' puppet apply site.pp --modulepath=/etc/puppet/modules/:./modules '''
     exec_cmd(cmd)
 
     pass
